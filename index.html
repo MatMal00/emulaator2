@@ -12,49 +12,72 @@
   </head>
   <body>
     <section class="container">
-      <h1 class="title">Symulator procesora 8086</h1>
-      <ul class="list">
-        <li class="listItem">
-          <h2 class="listItemTitle">ax</h2>
-          <input
-            value="0000"
-            class="input"
-            type="text"
-            maxlength="4"
-            minlength="4"
-          />
-        </li>
-        <li class="listItem">
-          <h2 class="listItemTitle">bx</h2>
-          <input
-            value="0000"
-            class="input"
-            type="text"
-            maxlength="4"
-            minlength="4"
-          />
-        </li>
-        <li class="listItem">
-          <h2 class="listItemTitle">cx</h2>
-          <input
-            value="0000"
-            class="input"
-            type="text"
-            maxlength="4"
-            minlength="4"
-          />
-        </li>
-        <li class="listItem">
-          <h2 class="listItemTitle">dx</h2>
-          <input
-            value="0000"
-            class="input"
-            type="text"
-            maxlength="4"
-            minlength="4"
-          />
-        </li>
-      </ul>
+      <h1 class="title">Processor 8086</h1>
+      <div class="wrapper">
+        <ul class="registersList">
+          <li class="registersListItem">
+            <h2 class="listItemTitle">ax</h2>
+            <input
+              value="0000"
+              class="input"
+              type="text"
+              maxlength="4"
+              minlength="4"
+            />
+          </li>
+          <li class="registersListItem">
+            <h2 class="listItemTitle">bx</h2>
+            <input
+              value="0000"
+              class="input"
+              type="text"
+              maxlength="4"
+              minlength="4"
+            />
+          </li>
+          <li class="registersListItem">
+            <h2 class="listItemTitle">cx</h2>
+            <input
+              value="0000"
+              class="input"
+              type="text"
+              maxlength="4"
+              minlength="4"
+            />
+          </li>
+          <li class="registersListItem">
+            <h2 class="listItemTitle">dx</h2>
+            <input
+              value="0000"
+              class="input"
+              type="text"
+              maxlength="4"
+              minlength="4"
+            />
+          </li>
+        </ul>
+        <ul class="selectList">
+          <li class="selectListItem">
+            <h2 class="registerListItemTitle">from</h2>
+            <select name="registersSelect" id="registersSelectFrom">
+              <option value="fromAx">ax</option>
+              <option value="fromBx">bx</option>
+              <option value="fromCx">cx</option>
+              <option value="fromDx">dx</option>
+            </select>
+          </li>
+          <li class="selectListItem">
+            <h2 class="registerListItemTitle">to</h2>
+            <select name="registersSelect" id="registersSelectTo">
+              <option value="toAx">ax</option>
+              <option value="toBx">bx</option>
+              <option value="toCx">cx</option>
+              <option value="toDx">dx</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <button>mov</button>
     </section>
   </body>
 </html>
