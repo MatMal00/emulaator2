@@ -8,7 +8,56 @@
   align-items: center;
 }
 
+.selectListItem:not(:first-child) {
+  margin-top: 20px;
+}
+
 .selectListItemTitle {
   margin-right: 12px;
   text-transform: uppercase;
+}
+
+.selectBox {
+  position: relative;
+  display: flex;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+select {
+  flex: 1;
+  padding: 0 10px;
+  appearance: none;
+  background-image: none;
+  background-color: #fff;
+  border: 1px solid #34495e;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  box-shadow: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.selectBox::after {
+  content: '\25BC';
+  padding: 7px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #34495e;
+  font-size: 15px;
+  border: 1px solid #34495e;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+
+.selectBox:hover::after {
+  color: #f79f13;
 }
