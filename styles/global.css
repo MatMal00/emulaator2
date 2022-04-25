@@ -6,12 +6,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
-  --gray: #34495e;
-  --darkgray: #2c3e50;
-}
-
 body {
   display: flex;
   justify-content: center;
