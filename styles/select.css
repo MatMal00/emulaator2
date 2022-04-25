@@ -1,0 +1,14 @@
+.selectList {
+  margin-left: 40px;
+}
+
+.selectListItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selectListItemTitle {
+  margin-right: 12px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,12 @@
+.registersList {
+}
+
+.registersListItem {
+  margin-top: 14px;
+  display: flex;
+}
+
+.registerListItemTitle {
+  margin-right: 12px;
+  text-transform: uppercase;
+}

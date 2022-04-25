@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emulator</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <section class="container">
@@ -16,49 +13,26 @@
       <div class="wrapper">
         <ul class="registersList">
           <li class="registersListItem">
-            <h2 class="listItemTitle">ax</h2>
-            <input
-              value="0000"
-              class="input"
-              type="text"
-              maxlength="4"
-              minlength="4"
-            />
+            <h2 class="registerListItemTitle">ax</h2>
+            <input value="0000" class="input" type="text" maxlength="4" minlength="4" />
           </li>
           <li class="registersListItem">
-            <h2 class="listItemTitle">bx</h2>
-            <input
-              value="0000"
-              class="input"
-              type="text"
-              maxlength="4"
-              minlength="4"
-            />
+            <h2 class="registerListItemTitle">bx</h2>
+            <input value="0000" class="input" type="text" maxlength="4" minlength="4" />
           </li>
           <li class="registersListItem">
-            <h2 class="listItemTitle">cx</h2>
-            <input
-              value="0000"
-              class="input"
-              type="text"
-              maxlength="4"
-              minlength="4"
-            />
+            <h2 class="registerListItemTitle">cx</h2>
+            <input value="0000" class="input" type="text" maxlength="4" minlength="4" />
           </li>
           <li class="registersListItem">
-            <h2 class="listItemTitle">dx</h2>
-            <input
-              value="0000"
-              class="input"
-              type="text"
-              maxlength="4"
-              minlength="4"
-            />
+            <h2 class="registerListItemTitle">dx</h2>
+            <input value="0000" class="input" type="text" maxlength="4" minlength="4" />
           </li>
         </ul>
+
         <ul class="selectList">
           <li class="selectListItem">
-            <h2 class="registerListItemTitle">from</h2>
+            <h2 class="selectListItemTitle">from</h2>
             <select name="registersSelect" id="registersSelectFrom">
               <option value="fromAx">ax</option>
               <option value="fromBx">bx</option>
@@ -67,7 +41,7 @@
             </select>
           </li>
           <li class="selectListItem">
-            <h2 class="registerListItemTitle">to</h2>
+            <h2 class="selectListItemTitle">to</h2>
             <select name="registersSelect" id="registersSelectTo">
               <option value="toAx">ax</option>
               <option value="toBx">bx</option>
@@ -77,7 +51,7 @@
           </li>
         </ul>
       </div>
-      <button>mov</button>
+      <button id="movBtn">mov</button>
     </section>
   </body>
 </html>
