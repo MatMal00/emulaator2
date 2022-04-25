@@ -73,6 +73,16 @@ button:hover {
   color: #000;
 }
 
+input,
+button,
+.selectBox {
+  box-shadow: 3px 3px 12px black;
+}
+
+.hide {
+  opacity: 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;

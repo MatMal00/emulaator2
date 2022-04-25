@@ -14,20 +14,20 @@
         <div class="wrapper">
           <ul class="registersList">
             <li class="registersListItem">
-              <h2 class="registerListItemTitle">ax</h2>
-              <input value="0000" type="text" maxlength="4" minlength="4" />
+              <h2 name="ax" class="registerListItemTitle">ax</h2>
+              <input name="ax" value="0000" type="text" maxlength="4" minlength="4" />
             </li>
             <li class="registersListItem">
-              <h2 class="registerListItemTitle">bx</h2>
-              <input value="0000" type="text" maxlength="4" minlength="4" />
+              <h2 name="bx" class="registerListItemTitle">bx</h2>
+              <input name="bx" value="0000" type="text" maxlength="4" minlength="4" />
             </li>
             <li class="registersListItem">
-              <h2 class="registerListItemTitle">cx</h2>
-              <input value="0000" type="text" maxlength="4" minlength="4" />
+              <h2 name="cx" class="registerListItemTitle">cx</h2>
+              <input name="cx" value="0000" type="text" maxlength="4" />
             </li>
             <li class="registersListItem">
-              <h2 class="registerListItemTitle">dx</h2>
-              <input value="0000" type="text" maxlength="4" minlength="4" />
+              <h2 name="dx" class="registerListItemTitle">dx</h2>
+              <input name="dx" value="0000" type="text" maxlength="4" />
             </li>
           </ul>
 
@@ -36,10 +36,10 @@
               <h2 class="selectListItemTitle">from</h2>
               <div class="selectBox">
                 <select name="registersSelect" id="registersSelectFrom">
-                  <option value="fromAx">ax</option>
-                  <option value="fromBx">bx</option>
-                  <option value="fromCx">cx</option>
-                  <option value="fromDx">dx</option>
+                  <option value="ax">ax</option>
+                  <option value="bx">bx</option>
+                  <option value="cx">cx</option>
+                  <option value="dx">dx</option>
                 </select>
               </div>
             </li>
@@ -47,10 +47,10 @@
               <h2 class="selectListItemTitle">to</h2>
               <div class="selectBox">
                 <select name="registersSelect" id="registersSelectTo">
-                  <option value="toAx">ax</option>
-                  <option selected value="toBx">bx</option>
-                  <option value="toCx">cx</option>
-                  <option value="toDx">dx</option>
+                  <option value="ax">ax</option>
+                  <option value="bx" selected>bx</option>
+                  <option value="cx">cx</option>
+                  <option value="dx">dx</option>
                 </select>
               </div>
             </li>
@@ -59,5 +59,7 @@
         <button type="submit" id="movBtn">mov</button>
       </form>
     </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -9,4 +9,9 @@
 .registerListItemTitle {
   margin-right: 12px;
   text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.activeTitle {
+  color: #f79f13;
 }
